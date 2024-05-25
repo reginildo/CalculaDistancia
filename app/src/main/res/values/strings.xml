@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calcula Distancia</string>
+    <string name="title_caution">Atenção!</string>
+    <string name="message_field_empty">Reveja os campos vazios e preencha-os com os valores devidos.</string>
+    <string name="message_okay">Okay</string>
+    <string name="coord_first_point">Digite as coordenadas do 1º ponto:</string>
+    <string name="coord_x_hint">xxxxxx.xxx</string>
+    <string name="coord_y_hint">xxxxxxx.xxx</string>
+    <string name="coord_z_hint">xxx.xxx</string>
+</resources>

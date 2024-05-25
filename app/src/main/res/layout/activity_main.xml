@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="28dp"
+    tools:layout_editor_absoluteY="19dp">
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalP1X"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/coord_x_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="@string/coord_first_point"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalP1Y"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/coord_y_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalP1X" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalP1Z"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/coord_z_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalP1Y" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="9dp"
+        android:text="Digite as coordenadas do 2º ponto:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimalP2X"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberDecimalP2X" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalP2X"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="@string/coord_x_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimalP1Z"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalP1Z" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalP2Y"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="@string/coord_y_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimalP2X"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalP2X" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalP2Z"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="@string/coord_z_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimalP2Y"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalP2Y" />
+
+    <Button
+        android:id="@+id/buttonOkay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="29dp"
+        android:text="@android:string/ok"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonClean"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClean"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonOkay" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="X:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimalP1X"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalP1X" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="Y:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimalP1Y"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalP1X" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimalP1Z"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalP1Y" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="X:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimalP2X"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalP2X" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="2dp"
+        android:text="Y:"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalP2Y"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberDecimalP2Y" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="Z:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimalP2Z"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimalP2Z" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:text="Distância Horizontal:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewDistHorizon"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDistHorizon" />
+
+    <TextView
+        android:id="@+id/textViewDistHorizon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDistIncl"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPercent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewPercent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Distância Inclinada:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewDistIncl"
+        app:layout_constraintEnd_toEndOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textViewDistIncl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPercent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPercent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewPercent" />
+
+    <TextView
+        android:id="@+id/textViewPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClean"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClean"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonClean"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
